@@ -5,7 +5,7 @@ echo Made my Asmund Kvam Kollbye
 echo
 echo ---------------- 1: -----------------
 echo
-./LinkedLists/run_list
+valgrind ./LinkedLists/run_list
 
 echo
 echo ---------------- 2: -----------------

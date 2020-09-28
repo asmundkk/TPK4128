@@ -19,6 +19,13 @@ void list_delete(list_t list)
         free(list->tail);
         free(list);
     }
+
+    else
+    {
+        free(list->head);
+        free(list->tail);
+        free(list);
+    }
     /* int i; */
     /* for (i = 1; i < list->length; i++) */
     /* { */
@@ -33,12 +40,12 @@ void list_delete(list_t list)
 
 void list_insert(list_t list, int index, int data)
 {
-    struct node * mynode = NULL;
+    struct node * mynode;
     mynode = (struct node *) malloc(sizeof(struct node));
 
-    struct node * tempnode = NULL;
-    tempnode = (struct node *) malloc(sizeof(struct node));
-    tempnode = list->head;
+    struct node * tempnode = list->head;
+    /* tempnode = (struct node *) malloc(sizeof(struct node)); */
+    /* tempnode = list->head; */
 
     int i;
     for (i = 0; i < index-1; i++)
@@ -55,6 +62,7 @@ void list_insert(list_t list, int index, int data)
         tempnode->next->prev = mynode;
     }
     tempnode->next = mynode;
+
 }
 
 void list_append(list_t list, int data)
@@ -89,10 +97,10 @@ void list_append(list_t list, int data)
 
 void list_print(list_t list)
 {
-    struct node * mynode = NULL;
-    mynode = (struct node *) malloc(sizeof(struct node));
+    struct node * mynode = list->head;
+    /* mynode = (struct node *) malloc(sizeof(struct node)); */
 
-    mynode = list->head;
+    /* mynode = list->head; */
 
     while (mynode != NULL)
     {
@@ -105,9 +113,9 @@ long list_sum(list_t list)
 {
     int i;
     long sum = 0;
-    struct node * tempnode = NULL;
-    tempnode = (struct node *) malloc(sizeof(struct node));
-    tempnode = list->head;
+    struct node * tempnode = list->head;
+    /* tempnode = (struct node *) malloc(sizeof(struct node)); */
+    /* tempnode = list->head; */
 
     for(i = 0; i < list->length; i++)
     {
@@ -119,9 +127,9 @@ long list_sum(list_t list)
 
 int list_get(list_t list, int index)
 {
-    struct node * mynode = NULL;
-    mynode = (struct node *) malloc(sizeof(struct node));
-    mynode = list->head;
+    struct node * mynode = list->head;
+    /* mynode = (struct node *) malloc(sizeof(struct node)); */
+    /* mynode = list->head; */
 
     int i;
     for (i = 0; i < index; i++)
@@ -133,9 +141,9 @@ int list_get(list_t list, int index)
 
 int list_extract(list_t list, int index)
 {
-    struct node * mynode = NULL;
-    mynode = (struct node *) malloc(sizeof(struct node));
-    mynode = list->head;
+    struct node * mynode = list->head;
+    /* mynode = (struct node *) malloc(sizeof(struct node)); */
+    /* mynode = list->head; */
     int temp;
 
     if(list->length == 0)
