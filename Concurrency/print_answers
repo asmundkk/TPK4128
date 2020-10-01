@@ -1,0 +1,38 @@
+#!/bin/sh
+
+echo ---------------------- Assignment A ----------------------
+./Fork/run_fork
+
+echo
+./Fork/run_vfork
+
+echo "When running fork the child process is copy of the parent process, and they do not memory space. The child is only executing from the place where fork() was called"
+echo "When vfork is run the parent process is stopped until the child process is ended. They do share memory space, and this is why the global variable b = 30. a however is a local variable only living inside the scope of the main function. This means that even tho the memory spaces shared the parent and the child does not have the same scope and therefore we get a segmentation error."
+
+
+echo ---------------- Assignment B -----------------------
+./Thread/run_thread
+
+echo "When using threads the global variable is increased every time the function is called. But the local variable never increased with more then one time before it goes out of scope"
+
+
+echo --------------------- Assignment C -------------------
+./Semaphores/run_thread
+
+echo "-The threads that does not get access right away have to wait until the other threads are done"
+echo "-The resources are not shared fairly among the threads, the first are allowed access, while the others have to wait"
+
+echo ------------------- Assignment D --------------------
+./Mutex/run_thread
+
+echo "- The increment function is accessing the global variables while the printing function is printing them out. This means that there is no way to know if variable a and b are the same or not, even tho they would be if not using threads"
+
+echo ------------------- Assignment E --------------------
+# ./Deadlock/run_thread
+
+echo "- the Deadlock/run_thread executable can be run, but it will result in a Deadlock and is therefore commented out from this script, however it can be uncommented if wanted"
+echo "-The deadlock happens because all mutexes are occupied"
+
+./DeadlockSolution/run_thread
+
+echo "- I fixed the deadlock by using the 'waiter' solution, by creating a Mutex that makes sure that the resources are available before giving a philosopher access to both forks. Other solutions are the resources hierarchy solution , and the Chandy/Misra solution."
