@@ -1,0 +1,8 @@
+prefix=/home/asmund/Uni/IndustriellMekatronikk/ROS/noetic_ws/devel
+
+Name: open_cv
+Description: Description of open_cv
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

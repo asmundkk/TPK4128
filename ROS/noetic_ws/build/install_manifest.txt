@@ -1,0 +1,13 @@
+/home/asmund/Uni/IndustriellMekatronikk/ROS/noetic_ws/install/_setup_util.py
+/home/asmund/Uni/IndustriellMekatronikk/ROS/noetic_ws/install/env.sh
+/home/asmund/Uni/IndustriellMekatronikk/ROS/noetic_ws/install/setup.bash
+/home/asmund/Uni/IndustriellMekatronikk/ROS/noetic_ws/install/local_setup.bash
+/home/asmund/Uni/IndustriellMekatronikk/ROS/noetic_ws/install/setup.sh
+/home/asmund/Uni/IndustriellMekatronikk/ROS/noetic_ws/install/local_setup.sh
+/home/asmund/Uni/IndustriellMekatronikk/ROS/noetic_ws/install/setup.zsh
+/home/asmund/Uni/IndustriellMekatronikk/ROS/noetic_ws/install/local_setup.zsh
+/home/asmund/Uni/IndustriellMekatronikk/ROS/noetic_ws/install/.rosinstall
+/home/asmund/Uni/IndustriellMekatronikk/ROS/noetic_ws/install/lib/pkgconfig/open_cv.pc
+/home/asmund/Uni/IndustriellMekatronikk/ROS/noetic_ws/install/share/open_cv/cmake/open_cvConfig.cmake
+/home/asmund/Uni/IndustriellMekatronikk/ROS/noetic_ws/install/share/open_cv/cmake/open_cvConfig-version.cmake
+/home/asmund/Uni/IndustriellMekatronikk/ROS/noetic_ws/install/share/open_cv/package.xml
